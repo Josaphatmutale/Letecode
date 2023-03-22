@@ -91,74 +91,95 @@ li a:active
     text-decoration: none;
     color: #EEEEEE;
 }
+
 /* Fin de la 1ère partie et début de la 2e partie */
 .part2
 {
     margin-top: 45px;
     background-color: #D8D8D8;
-    height: 270px;
+    height: 280px;
     display: flex;
 }
 
-.aside p
+.article p
 {
     font-size: 15px;
     padding-top: 20px;
+    margin-right: 35px;
 }
 
-.aside h2
+.article h2
 {
     font-size: 23px;
     padding-top: 10px;
 }
-.aside
+.article
 {
     margin: 20px 170px;
 }
-.logo2
+
+.section2 img
 {
-    width: 270px;
-    height: 150px;
-    padding-left: 260px;
-    padding-top: 70px;
-}
- /* Fin de la 2e partie et début de la 3e partie */
-.part3
-{
-    margin-top: 30px;
-    margin-left: 280px;
+    width: 370px;
+    height: 205px;
+    padding-top: 30px;
+    padding-right: 170px;
 }
 
-.part3 h2
-{ 
-    padding-bottom: 25px;
-}
-
-
-.part3 p
+.section3 .membres1
 {
-    padding-bottom: 25px;
-    padding-right: 190px;
+    margin-left: 155px;
 }
 
-.part3 ul
+.section3 h2
 {
-    list-style:none ;
-    padding-top: 15px;
+  padding-top:  20px;
+  padding-bottom: 45px;
+  font-size: 23px;
+  margin-left: 270px;
 }
-/* Fin de la 3e partie et début du footer */
+
+.membres1
+{
+    display: flex;
+}
+
+.membres1 img
+{
+    border-radius: 50%;
+    background-color: #D8D8D8;
+    height: 20px ;
+    margin: 0 75px;
+    padding: 35px;
+    width: 1px;
+}
+
+.section4 .membre
+{
+     display: flex;
+     margin: 50px 155px;
+}
+.membre img
+{
+    border-radius: 50%;
+    background-color: #D8D8D8;
+    height: 20px ;
+    margin: 0 75px;
+    padding: 35px;
+    width: 1px;
+}
+
 footer
 {
     background-color: #0F2243;
-    height: 190px;
-    margin-top: 50px;
+    height: 210px;
+    margin-top: 80px;
 }
 
 footer p
 {
     color: #EEEEEE;
     font-size: 15px;
-    padding-left: 290px;
+    padding-left: 240px;
     padding-top: 90px;
 }
-/* Fin du footer */
