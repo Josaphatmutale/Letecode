@@ -1,9 +1,27 @@
-/* En tête */
+/* Ici je fais une recapitulation de la structure de cette page, pour commencer:
+-Elle se divisera en 3 parties dont l'en-tête, le corps et le footer qui est le pieds de la page
+
+1. L'en-tête commence du dessus
+
+2. Le corps a 3 sections:
+
+La premier section commence du premier titre à Nous contacter
+
+La 2e section a 2 parties dont part1 et part2, part1 comprend le logo et part2 vous avez droit d'apprendre
+
+La 3e section et la dernière  comprend A propos de nous et ce qui suit
+
+3.Le footer lui comprend la bordure bleue et tout ce qui la renferme
+*/
+
+
+/* Début de l'en-tête */
+/* Souligons que toutes les pages n'ont qu'une seule en-tête */
 *
 {
     margin: 0;
     padding: 0;
-    font-family: Arial, Futura, helvetica, impact , Trebuchet MS, verdana;
+    font-family: url(https://fonts.google.com/specimen/Montserrat);
 }
 nav
 {
@@ -52,25 +70,26 @@ li a:active
 {
     color:#D72385;
 }
-/* Fin de l'en-tête et début du corps */
-.part1
+/* Fin de l'en-tête et début du corps (main) */
+/* Cette 1ère section du corps sera pour la page index et communauté */
+.section1
 {
     text-align: center;
 }
 
-.part1 p
+.section1 p
 {
  padding-top: 9px;
   font-size: 13px;
 }
 
-.part1 h1
+.section1 h1
 {
   padding-top: 50px;
   font-size: 28px;
 }
 
-.part1 div
+.section1 div
 {
     border-radius: 15px;
     background-color: #D72385;
@@ -80,68 +99,71 @@ li a:active
     margin-top: 40px;
     box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.2);
 }
-.part1 #paragraphe1
+.section1 #paragraphe1
 {
     padding-top: 9px;
     font-size: 17px;
 }
 
-.part1 a 
+.section1 a 
 {
     text-decoration: none;
     color: #EEEEEE;
 }
-/* Fin de la 1ère partie et début de la 2e partie */
-.part2
+/* Fin de la 1ère section */
+/* Ici débute la 2e section de main de la page  */
+.section2
 {
-    margin-top: 45px;
-    background-color: #D8D8D8;
-    height: 270px;
     display: flex;
+    background-color: #D8D8D8;
+    margin-top: 45px;
+    height: 270px;
 }
 
-.aside p
-{
-    font-size: 15px;
-    padding-top: 20px;
-}
-
-.aside h2
-{
-    font-size: 23px;
-    padding-top: 10px;
-}
-.aside
-{
-    margin: 20px 170px;
-}
-.logo2
+.part1 img
 {
     width: 270px;
     height: 150px;
     padding-left: 260px;
     padding-top: 70px;
 }
+
+.part2 p
+{
+    font-size: 15px;
+    padding-top: 20px;
+}
+
+.part2 h2
+{
+    font-size: 23px;
+    padding-top: 10px;
+}
+.part2
+{
+    margin: 20px 170px;
+}
+
  /* Fin de la 2e partie et début de la 3e partie */
-.part3
+.section3
 {
     margin-top: 30px;
     margin-left: 280px;
 }
 
-.part3 h2
+.section3 h2
 { 
     padding-bottom: 25px;
 }
 
 
-.part3 p
+.section3 p
 {
     padding-bottom: 25px;
     padding-right: 190px;
 }
 
-.part3 ul
+.section3 ul
 {
     list-style:none ;
     padding-top: 15px;
@@ -162,3 +184,216 @@ footer p
     padding-top: 90px;
 }
 /* Fin du footer */
+/*  */
+/*  */
+/* Style de la page communauté */
+.section2_communauty 
+{
+    background-color: #D8D8D8;
+    margin-top: 45px;
+    height: 270px;
+    padding-top: 15px;
+    display: flex;
+}
+
+.part1_communauty .paragraphe1_communauty
+{
+    margin-top: 15px;
+}
+
+.part1_communauty .titre1_communauty
+{
+    font-size: 23px;
+    padding-top: 15px;
+}
+.part1_communauty
+{
+   padding-left: 170px;
+}
+
+.python
+{
+    width: 300px;
+    height: 200px;
+    margin-right: 50px;
+    
+}
+
+.section3_communauty .part1_communaut
+{
+    margin-left: 155px;
+}
+
+.section3_communauty h2
+{
+  padding-top:  20px;
+  padding-bottom: 45px;
+  font-size: 23px;
+  margin-left: 270px;
+}
+
+.part1_communaut
+{
+    display: flex;
+}
+
+.part1_communaut img
+{
+    border-radius: 50%;
+    background-color: #D8D8D8;
+    height: 20px ;
+    margin: 0 75px;
+    padding: 35px;
+    width: 1px;
+}
+
+.part1_communaut .name
+{
+    padding-top: 10px;
+    padding-left: 105px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.section4 .section4_part1
+{
+     display: flex;
+     margin: 50px 155px;
+}
+.section4_part1 img
+{
+    border-radius: 50%;
+    background-color: #D8D8D8;
+    height: 20px ;
+    margin: 0 75px;
+    padding: 35px;
+    width: 1px;
+}
+
+.section4_part1 .name
+{
+    padding-top: 10px;
+    padding-left: 105px;
+    font-weight: bold;
+    font-size: 20px;
+}
+/*Fin de la page communauté  */
+/*  */
+/*  */
+/*Début de la page cours  */
+
+.section1_cours h1
+{
+    margin-top: 50px;
+    margin-left: 180px;
+    font-size: 25px;
+}
+
+.section1_cours_image div
+{
+    border: #D8D8D8 2px solid;
+    background-color: #D8D8D8;
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: 180px;
+    height: 190px;
+    width: 210px;
+    
+}
+
+.section1_cours_nom
+{
+    font-weight: bold;
+    margin-top: 20px;
+    padding-right: 135px;
+    margin-left: 180px ;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section1_cours_nom div
+{
+    margin-right: 200px;
+    padding-right: 2px;
+    
+}
+
+.section1_cours_nom .html
+{
+   padding-right: 30px; 
+}
+
+.section1_cours_hour
+{
+    display: flex;
+    justify-content: space-between;
+    margin-left:180px ;
+    padding-right: 310px;
+    padding-top: 5px;
+}
+ 
+.section1_cours_hour .late
+{
+    padding-right: 10px;
+}
+
+.section2_cours_image div
+{
+    border: #D8D8D8 2px solid;
+    background-color: #D8D8D8;
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: 180px;
+    height: 190px;
+    width: 210px;
+}
+
+
+.section3_cours_nom 
+{
+    font-weight: bold;
+    margin-top: 20px;
+    padding-right: 185px;
+    margin-left: 175px ;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.section3_cours_nom .responsive
+{
+  margin-right: 10px;
+  padding-right: 10px;
+}
+
+.section3_cours_hour
+{
+    display: flex;
+    justify-content: space-between;
+    margin-left:180px ;
+    padding-right: 310px;
+    padding-top: 5px;
+}
+ 
+/*  */
+/*  */
+/*  */
+.section4_cours 
+{
+    background-color: #D8D8D8;
+    margin-top: 55px;
+    height: 270px;
+    padding-top: 15px;
+    display: flex;
+}
+
+.part1_cours h2
+{
+    padding: 20px 180px;
+}
+
+.part1_cours p
+{
+    padding: 0 185px;
+    margin-right: 200px;
+}
