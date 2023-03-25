@@ -1,28 +1,13 @@
-/* Ici je fais une recapitulation de la structure de cette page, pour commencer:
--Elle se divisera en 3 parties dont l'en-tête, le corps et le footer qui est le pieds de la page
 
-1. L'en-tête commence du dessus
+/* Début de l'en-tête de toutes les pages */
 
-2. Le corps a 3 sections:
-
-La premier section commence du premier titre à Nous contacter
-
-La 2e section a 2 parties dont part1 et part2, part1 comprend le logo et part2 vous avez droit d'apprendre
-
-La 3e section et la dernière  comprend A propos de nous et ce qui suit
-
-3.Le footer lui comprend la bordure bleue et tout ce qui la renferme
-*/
-
-
-/* Début de l'en-tête */
-/* Souligons que toutes les pages n'ont qu'une seule en-tête */
 *
 {
     margin: 0;
     padding: 0;
     font-family: url(https://fonts.google.com/specimen/Montserrat);
 }
+
 nav
 {
     background-color: #0F2243;
@@ -33,6 +18,7 @@ nav
     justify-content: space-between;
     font-size: 14px;
 }
+
 nav ul li
 {
     display: inline-block;
@@ -70,8 +56,10 @@ li a:active
 {
     color:#D72385;
 }
+
 /* Fin de l'en-tête et début du corps (main) */
 /* Cette 1ère section du corps sera pour la page index et communauté */
+
 .section1
 {
     text-align: center;
@@ -110,8 +98,11 @@ li a:active
     text-decoration: none;
     color: #EEEEEE;
 }
-/* Fin de la 1ère section */
-/* Ici débute la 2e section de main de la page  */
+
+/* Fin de la 1ère section de la page index et communauté */
+/* Ici débute la 2e section du corps de la page index  */
+/* La 2e section comprend la part1 qui renferme l'image puis la part2 qui renferme le paragraphe et 2e titre */
+
 .section2
 {
     display: flex;
@@ -144,7 +135,8 @@ li a:active
     margin: 20px 170px;
 }
 
- /* Fin de la 2e partie et début de la 3e partie */
+ /* Fin de la 2e section et début de la 3e section de la index */
+
 .section3
 {
     margin-top: 30px;
@@ -168,26 +160,34 @@ li a:active
     list-style:none ;
     padding-top: 15px;
 }
-/* Fin de la 3e partie et début du footer */
+
+/* paragraphe de footer de la page index */
+.index p
+{
+ padding-left: 285px;
+ padding-top: 85px;
+}
+/*  */
+
+/* Fin de la 3e partie de la page index */
+/*  */
+
+/* début du footer de toutes les pages  */
 footer
 {
     background-color: #0F2243;
     height: 190px;
     margin-top: 50px;
-}
-
-footer p
-{
     color: #EEEEEE;
     font-size: 15px;
-    padding-left: 290px;
-    padding-top: 90px;
 }
-/* Fin du footer */
 /*  */
-/*  */
+
 /* Style de la page communauté */
+/* Début du corps de la page communauté */
+
 .section2_communauty 
+/* ceci renferme l'image, le 2e paragraphe et le 2e titre de la 2e section de la page communauté */
 {
     background-color: #D8D8D8;
     margin-top: 45px;
@@ -197,11 +197,13 @@ footer p
 }
 
 .part1_communauty .paragraphe1_communauty
+/* 2e paragraphe de la page communauté */
 {
     margin-top: 15px;
 }
 
 .part1_communauty .titre1_communauty
+/* 2e titre de la page communauté */
 {
     font-size: 23px;
     padding-top: 15px;
@@ -215,9 +217,12 @@ footer p
 {
     width: 300px;
     height: 200px;
-    margin-right: 50px;
-    
+    margin-right: 170px;
+    padding: 15px 85px;
 }
+/*  */
+
+/* Début de la 3e section de la page communauté */
 
 .section3_communauty .part1_communaut
 {
@@ -225,6 +230,7 @@ footer p
 }
 
 .section3_communauty h2
+/* Titre */
 {
   padding-top:  20px;
   padding-bottom: 45px;
@@ -233,6 +239,7 @@ footer p
 }
 
 .part1_communaut
+/* Ceci renferme les images des membres et leurs noms de la 1ère colonne */
 {
     display: flex;
 }
@@ -254,8 +261,11 @@ footer p
     font-weight: bold;
     font-size: 20px;
 }
+/*  */
 
-.section4 .section4_part1
+/* Début de la 4e section de page communauté */
+.section4_communauty .section4_part1
+/* Ceci renferme les images des membres et leurs noms de la 1ère colonne */
 {
      display: flex;
      margin: 50px 155px;
@@ -277,9 +287,20 @@ footer p
     font-weight: bold;
     font-size: 20px;
 }
+
+/* parargraphe de footer de la communauté*/
+.communauty p
+{
+    padding-left: 255px;
+    padding-top: 85px;
+}
+
+/* Fin du footer */
+/*  */
+
 /*Fin de la page communauté  */
 /*  */
-/*  */
+
 /*Début de la page cours  */
 
 .section1_cours h1
@@ -377,14 +398,12 @@ footer p
  
 /*  */
 /*  */
-/*  */
-.section4_cours 
+
+.part1_cours
 {
     background-color: #D8D8D8;
     margin-top: 55px;
     height: 270px;
-    padding-top: 15px;
-    display: flex;
 }
 
 .part1_cours h2
@@ -396,4 +415,195 @@ footer p
 {
     padding: 0 185px;
     margin-right: 200px;
+}
+
+.part2_cours p
+{
+    display: flex;
+}
+
+.div_footer
+{
+    background-color: #0F2243;
+    height: 190px;
+}
+
+.div_footer p
+{
+    color: #EEEEEE;
+    font-size: 15px;
+    padding-left: 210px;
+    padding-top: 90px;
+}
+
+.section_contact h1
+{
+    padding: 15px 165px;
+}
+
+.section_contact p
+{
+    padding: 1px 165px ;
+}
+
+.cours_container
+{
+    display: flex;
+    margin-top: 45px;
+    margin-left: 10px;
+}
+
+.boite
+{
+    padding-left: 170px;
+}
+
+.text h3 
+{
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+.text p
+{
+    padding-top: 5px;
+} 
+
+.cours_container1
+{
+    margin-top: 45px;
+    margin-left: 10px;
+    display: flex;
+}
+
+.container .all_container
+{
+    display: flex;
+}
+
+footer .container
+{
+    margin-top: 75px;
+    background-color:#D8D8D8;
+    height: 350px;
+}
+
+.container h2
+{
+    margin-left: 180px;
+    color: black;
+    padding-top: 35px;
+}
+
+.all_container .text1
+{
+    margin-left: 180px ;
+    padding-top: 15px;
+    padding-right: 20px;
+    color: black;
+}
+
+.contact
+{
+    margin-right: 190px;
+    padding-left: 60px;
+}
+
+.contact button
+{
+ margin-top: 25px;
+ border-radius: 15px 15px;
+ background-color: #D72385;
+ height: 35px;
+ width: 295px;
+ box-shadow: 9px 9px 9px rgba(247, 244, 244, 0.2);
+ color:#ffffff;
+ border-color: #ffffff;
+}
+
+.contact input
+{
+    border-radius: 10px; 
+    font-size: 18px; 
+    height: 45px;
+    width: 275px;
+    padding-left: 15px;
+}
+
+.footer
+{
+  background-color: #0F2243;
+  height: 150px;
+  padding-left: 255px;
+  padding-top: 85px;
+}
+
+.form
+{
+    margin-left: 170px;
+    margin-top: 25px;
+}
+
+.form p
+{
+    padding-top: 15px ;
+    font-size: 20px;
+}
+
+form
+{
+    margin-left: 170px;
+    margin-top: 25px; 
+}
+
+.formulaire1
+{
+    display: flex;
+}
+
+.formulaire2
+{
+margin-left: 35px;
+}
+
+.formulaire2 input
+{
+    border-radius: 10px;  
+    height: 35px;
+    width: 275px; 
+    margin: 10px 0; 
+}
+
+.formulaire input
+{
+border-radius: 10px;  
+height: 35px;
+width: 275px;
+margin: 10px 0;
+}
+
+.formulaire textarea
+{
+border-radius: 10px;  
+height: 35px;
+width: 275px;
+margin: 10px 0;         
+}
+
+.formulaire label
+{
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+.msg button
+{
+    margin-top: 25px;
+    border-radius: 15px 15px;
+    background-color: #D72385;
+    height: 35px;
+    width: 295px;
+    box-shadow: 9px 9px 9px rgba(247, 244, 244, 0.2);
+    color:#ffffff;
+    border-color: #ffffff;
 }
