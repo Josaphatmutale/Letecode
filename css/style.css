@@ -1,6 +1,6 @@
 
 /* Début de l'en-tête de toutes les pages */
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 *
 {
     margin: 0;
@@ -398,7 +398,7 @@ li a:active
 .footer_same 
 {
  background-color: #EEEEEE;
- height: 310px;
+ height: 350px;
  margin-top: 100px;
 }
 
@@ -547,51 +547,8 @@ padding-left: 25px;
     justify-content: space-between;
     padding-right: 560px;
 }
+/* Fin du footer */
+/* Fin de la page */
 
-/*  
-.formulaire1
-{
-    display: flex;
-}
-
-.formulaire2
-{
-margin-left: 35px;
-font-size: 20px;
-}
-
-
-.formulaire3 input
-{
-
-border-radius: 10px;  
-height: 35px;
-width: 275px; 
-margin: 10px 0;
-}
-
-.formulaire3 label
-{
-    font-size: 20px;
-}
-
-.formulaire2 input
-{
-    border-radius: 10px;  
-    height: 35px;
-    width: 275px; 
-    margin: 10px 0; 
-}
-
-.formulaire input
-{
-border-radius: 10px;  
-height: 35px;
-width: 275px;
-margin: 10px 10px;
-
-}
-
-*/
 
 
