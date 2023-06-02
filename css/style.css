@@ -1,6 +1,4 @@
 
-/* Début de l'en-tête de toutes les pages */
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap');
 *
 {
     margin: 0;
@@ -13,56 +11,66 @@ body
      color: black;
 }
 
-/* Menu du site */
-nav
-{
-    background-color: #0F2243;
-    height: 45px;
-    display: flex;
-    padding: 5px 0;
-    align-items: center;
-    justify-content: space-between;
+.wrapper{
+    height: 100%;
+    width: 100%;
 }
 
-nav ul li
+/* Menu du site */
+
+.nav-bar
 {
-    display: inline-block;
+    background-color: #0F2243;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    /* margin: 30px; */
+}
+
+
+.nav-bar .nav-links ul 
+{
+    display: flex;
     list-style: none;
     color: #fff;
-    margin-right: 30px;
-    padding-right: 50px;
 }
+
+.nav-links ul li{
+    margin: 0 10px;
+}
+
 /*  */
 
 /* Logo du site */
-#logo 
+.nav-bar .nav-logo 
 {
-    margin-left: 95px;
     display: flex;
-    padding: 0 70px;
     align-items: center;
+    margin: 0 25px;
+    gap: 10px;
 }
 
-#logo img
+.nav-bar #logo
 {
-    width: 75px;
-    height: 35px;
-    margin-right: 10px;
+    width: 105px;
+    height: 55px;
 }
+
 /*  */
 li a
 {
  text-decoration: none;
  color:#EEEEEE ;
- font-weight: 500;
+ font-weight:bolder;
  font-size: 15px;
+ /* align-items:center; */
 }
 
 li a:hover
 {
     color:white ;
-    border-bottom: #EEEEEE 1px solid;
-    font-weight: 900;
+    border-bottom: #EEEEEE 5px solid;
     font-size: 15px;
 }
 
