@@ -28,6 +28,23 @@ body
     /* margin: 30px; */
 }
 
+.nav-bar .btn-close{
+    border: none;
+    background-color: #0F2243;
+    color: white;
+    font-weight: bolder;
+    display: none;
+    cursor: pointer;
+}
+
+.nav-bar .btn-menu{
+    border: none;
+    background-color: #0F2243;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    display: none;
+}
 
 .nav-bar .nav-links ul 
 {
@@ -70,7 +87,7 @@ li a
 li a:hover
 {
     color:white ;
-    border-bottom: #EEEEEE 5px solid;
+    border-bottom: #EEEEEE 2px solid;
     font-size: 15px;
 }
 
@@ -129,7 +146,7 @@ li a:active
     display: flex;
     background-color: #EEEEEE;
     margin-top: 45px;
-    height: 290px;
+    height: 100%;
 }
 
 .part1_contenu_index img
@@ -210,6 +227,7 @@ li a:active
 .main_communaute
 {
     text-align: center;
+    height: 100%;
 }
 
 .main_communaute p
@@ -254,25 +272,27 @@ li a:active
 {
     background-color: #EEEEEE;
     margin-top: 45px;
-    height: 290px;
+    height: 100%;
+    width: 100%;
     padding-top: 15px;
     display: flex;
+    flex-wrap:nowrap;
 }
 
-.part1_contenu_communaute p
+.part_contenu_communaute p
 /* 2e paragraphe de la page communauté */
 {
     margin-top: 15px;
     padding-right: 95px;
 }
 
-.part1_contenu_communaute h2
+.part_contenu_communaute h2
 /* 2e titre de la page communauté */
 {
     font-size: 23px;
     padding-top: 15px;
 }
-.part1_contenu_communaute
+.part_contenu_communaute
 {
    padding-left: 170px;
    margin-top: 15px;
@@ -289,12 +309,13 @@ li a:active
 
 /* Début de la 3e section de la page communauté */
 
-.colonne1_communaute
+.colonne_communaute
 {
     margin-left: 155px;
+    height: 100%;
 }
 
-.colonne1_communaute h2
+.colonne_communaute h2
 /* Titre */
 {
   padding-top:  30px;
@@ -303,10 +324,13 @@ li a:active
   margin-left: 95px;
 }
 
-.colonne1_communaute .membres
+.colonne_communaute .membres
 {
     display: flex;
-    margin: 5px 0;
+    margin: 10px 0;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
 }
 
 .membres img
@@ -328,18 +352,6 @@ li a:active
 }
 /*  */
 
-/* Début de la 4e section de page communauté */
-.colonne2_communaute
-{ 
-   margin: 50px 160px; 
-} 
-.colonne2_communaute .membres
-/* Ceci renferme les images des membres et leurs noms de la 2è colonne */
-{
-     display: flex;
-     padding-bottom: 40px;
-}
-
 /*footer de la page communauté*/
 .footer_communaute p
 {
@@ -350,7 +362,6 @@ li a:active
 .footer_communaute
 {
     background-color: #0F2243;
-    height: 190px;
     margin-top: 50px;
     color: #EEEEEE;
     font-size: 15px;
@@ -363,12 +374,8 @@ li a:active
 /*Début de la page cours  */
 /* Unique section de la page cours */
 
-.main_cours .boite_cours
-/* Colonne 2 */
-{
-    margin-left: 180px;
-    margin-top: 10px;
-    display: flex;
+.main_cours{
+    height: 100%;
 }
 
 .main_cours .colonne_cours
@@ -377,6 +384,8 @@ li a:active
     margin-left: 180px;
     margin-top: 10px;
     display: flex;
+    flex-wrap: wrap;
+    height: 100%;
 }
 
 .main_cours h1
@@ -414,8 +423,15 @@ li a:active
 .footer_same 
 {
  background-color: #EEEEEE;
- height: 350px;
+ /* height: 350px; */
+ height: 100%;
+ width: 100%;
  margin-top: 100px;
+}
+
+#form-contact{
+    /* width: 100%; */
+    height: 100%;
 }
 
 .footer_same h2
@@ -566,7 +582,126 @@ padding-left: 25px;
 /* Fin du footer */
 /* Fin de la page */
 
-@media screen and (max-width: 1200px)
+@media  screen and (max-width:900px){
+    .nav-bar .btn-menu{
+        display: block;
+    } 
+
+    .nav-bar .btn-close{
+        display: block;
+    }
+
+    .nav-bar{
+        padding: 0;
+        align-items: normal;
+        height: 100%;
+    }
+
+    .nav-bar .nav-links ul{
+       flex-direction: column;
+       margin: auto;
+    }
+
+    .nav-bar .nav-links ul li{
+        font-size: 35px;
+    }
+
+    .nav-links{
+        position:absolute;
+        background-color: #0F2243;
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        /* margin-left: -100%; */
+    }
+
+    /* .nav-links #list-links{
+        margin-left: 0;
+    } */
+
+    .formulaire_contact{
+        flex-wrap: wrap;
+        margin: 10px 0;
+    }
+
+    .section_footer{
+        flex-wrap: wrap;
+    }
+
+    .contenu_index .part1_contenu_index{
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .part1_contenu_index img{
+       height: 150px;
+       width: 250px;
+       margin-right: 130px;
+    }
+    
+    .container_index{
+        margin: auto;
+    }
+
+    .container_index h2{
+        text-align: center;
+        margin-top: 10px;
+    }
+ 
+    .container_index p, ul li, h3{
+        margin: 0 150px;
+    }
+     
+    .container_index p{
+        padding: 15px  0;
+        text-align: justify;
+    }
+
+    .footer_index p{
+        margin: 0;
+        /* padding: 0; */
+    }
+
+    .contenu_index{
+        flex-direction: column;
+    }
+
+    .part2_contenu_index h2{
+        text-align: center;
+    }
+
+    .part2_contenu_index p{
+      text-align: justify; 
+    }
+
+    .part_contenu_communaute h2{
+        text-align: center;
+        margin-right: 150px;
+        padding: 0;
+    }
+
+    .contenu_communaute{
+        flex-wrap: wrap;
+    }
+
+    .contenu_communaute .python{
+        margin: 0 190px;
+    }
+
+    .colonne_communaute .membres{
+        flex-wrap: wrap;
+    }
+
+    .membres .name {
+        margin: 15px 0;
+    }
+
+    .colonne_cours{
+        flex-wrap:nowrap;
+    }
+}
+
+/* @media screen and (max-width: 1200px)
  {
    nav {width: 100%; height: auto; }
     
@@ -574,9 +709,9 @@ padding-left: 25px;
 
    .contenu_index {width: 100%; height: auto;}
 
- }
+ } */
 
- @media screen and (min-width:992px)
+ /* @media screen and (min-width:992px)
  {
     nav {width: 100%;}
     nav ul li { overflow: hidden ;
@@ -593,9 +728,9 @@ padding-left: 25px;
     }
 
     .contenu_index {width: 100%; height: auto;}
- }
+ } */
     
-
+/* 
  @media screen and (min-width:768px)
  {
     nav {width: 100%; text-align: center;}
@@ -615,9 +750,9 @@ padding-left: 25px;
     }
 
     .contenu_index {width: 100%; height: auto; }
- }
+ } */
 
-
+/* 
  @media  screen and (min-width:600px)
  {
     nav {width: 100%;}
@@ -631,9 +766,9 @@ padding-left: 25px;
     }
 
     .contenu_index {width: 100%; height: auto;}
- }
+ } */
 
- 
+/*  
  @media screen and (max-width:600px)
  {
     nav {width: 100%;}
@@ -649,4 +784,4 @@ padding-left: 25px;
     }
 
     .contenu_index {width: 100%; height: auto;}
- }
+ } */

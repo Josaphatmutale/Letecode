@@ -14,8 +14,8 @@
       <meta property="og:url" content="https://josaphatmutale.github.io/MonTp/">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
       <!-- La mise en page commence ici -->
@@ -26,7 +26,7 @@
                     <img id="logo" src="../img/logo-trans_copy.png"  alt="Mon logo">
                     <span class="txt-logo" style="color:white; font-size:17px;">Letecode</span>
                 </div>
-                <div class="nav-links">
+                <div id="nav-links" class="nav-links">
                     <ul>
                        <li>
                           <a href="../index.html" title="Accueil">
@@ -49,19 +49,19 @@
                           </a>
                        </li>
                        <li>
-                        <!-- <button type="button">
-                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                        <button type="button" title="Fermer le menu" class="btn-close" id="btn-close">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="35" height="40" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
                               <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
                            </svg>
-                       </button> -->
+                       </button>
                      </li>
                     </ul>
                   </div>
-                    <!-- <button type="menu">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <button type="menu" title="Ouvrir le menu" class="btn-menu" id="btn-close">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
                           </svg>
-                    </button> -->
+                    </button>
                 </nav>
         <!-- Fin de l'en-tête -->
         <!-- Début de main -->
@@ -77,15 +77,11 @@
                              <img src="../img/github.jpg" style="height:190px; width: 210px;" alt="logo_github">
                           </div>
                           <div class="text_cours">
-                            <h3>
-                              Git et Github
-                            </h3>
-                            <p>
-                              5 heures
-                            </p>
+                            <h3>Git et Github</h3>
+                             <p>5 heures</p> 
                           </div>
-                     </div>
-                     <div class="part_cours">
+                      </div>
+                      <div class="part_cours">
                           <div>
                              <img src="../img/html.jpg" alt="logo_html5" style="height:190px; width: 210px;">
                           </div>
@@ -97,8 +93,8 @@
                               5 heures
                              </p>
                           </div>
-                     </div>
-                     <div class="part_cours">
+                      </div>
+                      <div class="part_cours">
                           <div>
                               <img src="../img/css3.jpg" alt="logo_css3" style="height:190px; width: 210px;">
                           </div>
@@ -110,49 +106,47 @@
                                 5 heures
                               </p>
                           </div>
-                     </div>
-                </div>
-                <div class="boite_cours">
-                     <div class="part_cours">
+                      </div>
+                      <div class="part_cours">
                          <div>
-                              <img src="../img/css3.jpg" style="height:190px; width: 210px;" alt="logo_github">
+                           <img src="../img/css3.jpg" style="height:190px; width: 210px;" alt="logo_github">
                          </div>
                          <div class="text_cours">
-                              <h3>
-                                Flexbox
-                              </h3>
-                              <p>
-                                5 heures
-                              </p>
+                           <h3>
+                             Flexbox
+                           </h3>
+                           <p>
+                             5 heures
+                           </p>
                          </div>
-                    </div>
-                    <div class="part_cours">
-                         <div>
-                              <img src="../img/responsive.jpg" alt="logo_html5" style="height:190px; width: 210px;">
-                         </div>
-                         <div class="text_cours">
-                              <h3>
-                                Responsive
-                              </h3>
-                              <p>
-                                5 heures
-                              </p>
-                         </div>
-                    </div>
-                    <div class="part_cours">
-                         <div>
-                              <img src="../img/github.jpg" alt="logo_css3" style="height:190px; width: 210px;">
-                         </div>
-                         <div class="text_cours">
-                            <h3>
-                              Animation
-                            </h3>
-                            <p>
-                              5 heures
-                            </p>
-                         </div>
-                   </div>
-                </div>
+                      </div>
+                 <div class="part_cours">
+                      <div>
+                           <img src="../img/responsive.jpg" alt="logo_html5" style="height:190px; width: 210px;">
+                      </div>
+                      <div class="text_cours">
+                           <h3>
+                             Responsive
+                           </h3>
+                           <p>
+                             5 heures
+                           </p>
+                      </div>
+                 </div>
+                 <div class="part_cours">
+                      <div>
+                           <img src="../img/github.jpg" alt="logo_css3" style="height:190px; width: 210px;">
+                      </div>
+                      <div class="text_cours">
+                         <h3>
+                           Animation
+                         </h3>
+                         <p>
+                           5 heures
+                         </p>
+                      </div>
+                 </div>
+               </div>
             </section>
            <!-- Fin de la section main -->
       </main>
